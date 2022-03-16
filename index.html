@@ -236,10 +236,10 @@
         <h2>Get in Touch</h2>
         <div class = "alert" > Your message has been sent</div>
         <div id="contact-form">
-            <form method="POST" id="contactForm" >
-                <input type="text" name="_subject" placeholder="Your name" id="name" required>
-                <input type="email" name="_replyto" placeholder="Your email" id = "email" required>
-                <textarea name="message" placeholder="Your message" id="message" required></textarea>
+                        <form method="POST" id="contactForm" action="https://portfolio-api023.herokuapp.com/message/submit"><!-api call-->
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message"  required></textarea>
                 <button type="submit">Send</button>
             </form>
         </div>
@@ -289,7 +289,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
     <script src="js/db-service.js"></script>
 </body>
 
