@@ -225,7 +225,7 @@ footer {
   height: 100vh;
   min-height: 500px;
   max-height: 1080px;
-  background: url(../images/lead-bg.jpg);
+  /* background: url(../images/lead-bg.jpg); */
   background-size: cover;
   padding: 15px;
   overflow: hidden;
@@ -518,13 +518,13 @@ footer {
   cursor: default;
   font-size: 1.2em;
 }
-.alert {
+.msg-alert {
     text-align: center;
     padding: 10px;
     background: #79c879;
     color: #fff;
     margin-bottom: 10px;
-    display: none;
+    
   }
 #contact {
   padding: 50px 15px;
@@ -580,7 +580,9 @@ footer {
   height: 150px;
   resize: none;
 }
-#contact-form button {
+#contact-form a {
+  text-decoration: none;
+  cursor: pointer;
   display: block;
   width: 100%;
   background: #fff;
@@ -592,7 +594,7 @@ footer {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: 0.5s ease all;
 }
-#contact-form button:hover {
+#contact-form a:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .optional-section {
